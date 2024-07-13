@@ -1,0 +1,40 @@
+---
+import File from "./icons/File.astro";
+import GitHub from "./icons/GitHub.astro";
+import Linkedin from "./icons/Linkedin.astro";
+import Mail from "./icons/Mail.astro";
+---
+
+<article class="flex flex-wrap gap-4 max-w-4xl w-full mx-auto font-mono">
+  <a
+    href="/files/curriculum.pdf"
+    target="_blank"
+    class="bg-white/10 rounded-lg p-4 flex gap-2 transition hover:text-yellow-500 hover:scale-110"
+  >
+    <File />
+    Currículum
+  </a>
+  <a
+    href="https://www.linkedin.com/in/mauriciodmo/"
+    target="_blank"
+    class="bg-white/10 rounded-lg p-4 flex gap-2 transition hover:text-yellow-500 hover:scale-110"
+  >
+    <Linkedin />
+    LinkedIn
+  </a>
+  <a
+    href="https://github.com/mauriciodmo"
+    target="_blank"
+    class="bg-white/10 rounded-lg p-4 flex gap-2 transition hover:text-yellow-500 hover:scale-110"
+  >
+    <GitHub />
+    GitHub
+  </a>
+  <a
+    href="mailto:mauriciodmoprogrammer@gmail.com"
+    class="bg-white/10 rounded-lg p-4 flex gap-2 transition hover:text-yellow-500 hover:scale-110"
+  >
+    <Mail />
+    Correo
+  </a>
+</article>
