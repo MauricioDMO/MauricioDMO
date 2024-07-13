@@ -1,6 +1,6 @@
 ---
 interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
@@ -8,44 +8,66 @@ const { title } = Astro.props;
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class="bg-slate-900 text-white min-h-screen">
+    <slot />
+  </body>
 </html>
 <style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-		background-size: 224px;
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+  body {
+    scroll-behavior: smooth;
+  }
+
+  @layer base {
+    @font-face {
+      font-family: "Raleway";
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(/fonts/Raleway.woff2) format("woff2");
+    }
+    @font-face {
+      font-family: "Roboto Mono";
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(/fonts/RobotoMono.woff2) format("woff2");
+    }
+  }
+
+  @theme {
+    --color-red-50: #fbe9ec;
+    --color-red-100: #f7d4d8;
+    --color-red-200: #f0a8b2;
+    --color-red-300: #e87d8b;
+    --color-red-400: #e05265;
+    --color-red-500: #d7263d;
+    --color-red-600: #ad1f32;
+    --color-red-700: #821725;
+    --color-red-800: #570f19;
+    --color-red-900: #2b080c;
+    --color-red-950: #160406;
+    --color-yellow-50: #fff6eb;
+    --color-yellow-100: #ffecd1;
+    --color-yellow-200: #ffd9a4;
+    --color-yellow-300: #fec87b;
+    --color-yellow-400: #feb44d;
+    --color-yellow-500: #fea120;
+    --color-yellow-600: #e48601;
+    --color-yellow-700: #ad6501;
+    --color-yellow-800: #704101;
+    --color-yellow-900: #382100;
+    --color-yellow-950: #1e1200;
+  }
 </style>
