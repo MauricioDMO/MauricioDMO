@@ -1,0 +1,140 @@
+---
+import Prompt from "../components/icons/Prompt.astro";
+import Section from "../components/Section.astro";
+import TitleSection from "../components/TitleSection.astro";
+import Technologies from "../components/technologies/Technologies.astro";
+import LinkBadge from "../components/LinkBadge.astro";
+import ExternalLink from "../components/icons/ExternalLink.astro";
+import GitHub from "../components/icons/GitHub.astro";
+
+import technologies from "../components/technologies/technologies";
+
+const projects = [
+  {
+    name: "IDo App",
+    url: null,
+    code: null,
+    img: "/images/projects/ido-app.avif",
+    alt: "IDo App - Aplicación para ofrecer servicios y alquileres",
+    professional: true,
+    description:
+      "Aplicación para ofrecer servicios y alquileres de productos. Proyecto en desarrollo (Encargado del front-end).",
+    projectTechnologies: [
+      technologies.react,
+      technologies.ionic,
+      technologies.tailwind,
+    ],
+  },
+  {
+    name: "Construfijaciones S.A. de C.V.",
+    url: "https://construfijaciones.com",
+    code: null,
+    img: "/images/projects/construfijaciones.avif",
+    alt: "Construfijaciones - Centro de Servicio Autorizado",
+    professional: true,
+    description:
+      "Web de Construfijaciones S.A. de C.V. empresa dedicada a la reparación, cobertura de garantías y mantenimiento de herramienta eléctrica. Además de la venta de refacciones y accesorios para herramienta eléctrica.",
+    projectTechnologies: [
+      technologies.react,
+      technologies.astro,
+      technologies.tailwind,
+      technologies.vercel,
+    ],
+  },
+  {
+    name: "Native Wine",
+    url: "https://native-wine.vercel.app",
+    code: "https://github.com/MauricioDMO/Native-Wine",
+    img: "/images/projects/native-wine.avif",
+    alt: "Native Wine - Vino Artesanal",
+    professional: false,
+    description:
+      "Web de Native Wine, una tienda de vinos. Proyecto personal para la materia de emprendimiento e innovación de la universidad.",
+    projectTechnologies: [
+      technologies.vanillaJS,
+      technologies.astro,
+      technologies.tailwind,
+      technologies.vercel,
+    ],
+  },
+];
+---
+
+<Section id="projects">
+  <TitleSection>
+    <Prompt class="size-10" />
+    Proyectos
+  </TitleSection>
+  <ul class="grid grid-cols-1 gap-12">
+    {
+      projects.map(
+        ({
+          img,
+          alt,
+          name,
+          professional,
+          projectTechnologies,
+          description,
+          url,
+          code,
+        }) => (
+          <li class="relative grid md:grid-cols-2 gap-8 group">
+            <div class="relative overflow-hidden rounded-lg">
+              <img
+                src={img}
+                alt={alt}
+                class="w-full aspect-video object-cover rounded-lg transition duration-500 scale-105 origin-top-left group-hover:scale-100"
+              />
+            </div>
+            <article class="relative">
+              <h3 class="text-xl font-bold mb-4 text-yellow-500">{name}</h3>
+              <Technologies technologies={projectTechnologies} />
+              <span
+                class={`border-b-2 text-white font-mono font-normal mt-4 inline-block ${
+                  professional ? "border-b-yellow-500" : "border-b-green-500"
+                }`}
+              >
+                {professional ? "Profesional" : "Personal"}
+              </span>
+              <p class="text-pretty mt-2 mb-4 text-white/80">{description}</p>
+              <div class="flex gap-2 mt-2">
+                {url ? (
+                  <LinkBadge
+                    class="w-min text-nowrap font-mono px-2 py-1 text-white/80"
+                    url={url}
+                  >
+                    <ExternalLink />
+                    Ver Proyecto
+                  </LinkBadge>
+                ) : (
+                  <span class="py-1 px-2 rounded-lg bg-white/10 opacity-70">
+                    Proyecto en desarrollo
+                  </span>
+                )}
+                {code && (
+                  <LinkBadge
+                    url={code}
+                    class="w-min text-nowrap font-mono px-2 py-1"
+                  >
+                    <GitHub /> Código
+                  </LinkBadge>
+                )}
+              </div>
+            </article>
+          </li>
+        )
+      )
+    }
+  </ul>
+</Section>
+
+<style>
+  ul:hover li:not(:hover) img {
+    opacity: 0.5;
+    filter: brightness(0.3) opacity(0.5) contrast(0.8);
+  }
+  li:hover img {
+    opacity: 1;
+    filter: contrast(1.1) brightness(1);
+  }
+</style>
