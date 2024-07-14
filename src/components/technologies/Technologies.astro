@@ -1,0 +1,26 @@
+---
+interface technology {
+  name: string;
+  icon: string;
+  page: string;
+  color: string;
+}
+const usedTechnologies: technology[] = Astro.props.technologies;
+---
+
+<article class="flex flex-wrap gap-2 my-2">
+  {
+    usedTechnologies.map(({ name, icon, page, color }) => (
+      <a
+        href={page}
+        rel="noopener noreferrer"
+        target="_blank"
+        class="flex items-center gap-1 font-mono font-medium text-xs rounded-full px-2 py-1"
+        style={`background-color: ${color}99; border: 1px solid ${color};`}
+      >
+        <img src={icon} alt={name} class="size-4" />
+        {name}
+      </a>
+    ))
+  }
+</article>
