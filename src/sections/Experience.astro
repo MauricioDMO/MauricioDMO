@@ -1,0 +1,64 @@
+---
+import Section from "../components/Section.astro";
+import TitleSection from "../components/TitleSection.astro";
+import Briefcase from "../components/icons/Briefcase.astro";
+
+const experience = [
+  {
+    company: "Construfijaciones S.A. de C.V.",
+    position: "Desarrollador Web",
+    startDate: "08/02/2024",
+    endDate: "Actualidad",
+    description:
+      "Desarrollo de la página web de la empresa, mantenimiento y actualización de la misma. Creación de nuevas funcionalidades y mejoras en la experiencia de usuario. Implementación de continuous integration y continuous deployment con Vercel y GitHub.",
+  },
+];
+---
+
+<Section id="experience">
+  <TitleSection>
+    <Briefcase class="size-10" />
+    Experiencia Laboral
+  </TitleSection>
+  <ul class="relative px-4 py-1">
+    {
+      experience.map((exp) => (
+        <li class="relative ml-10 my-6 flex gap-8 flex-col md:flex-row">
+          <article>
+            <h3 class="text-xl font-bold text-yellow-500">{exp.company}</h3>
+            <p>{exp.position}</p>
+            <p class="text-nowrap">
+              {exp.startDate} - {exp.endDate}
+            </p>
+          </article>
+          <p class="max-w-48ch text-pretty">{exp.description}</p>
+        </li>
+      ))
+    }
+  </ul>
+</Section>
+
+<style>
+  ul::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: #fff4;
+  }
+  li::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -41px;
+    top: 1cap;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #fea120;
+  }
+</style>
