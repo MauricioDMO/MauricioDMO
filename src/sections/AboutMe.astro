@@ -1,0 +1,46 @@
+---
+import User from "../components/icons/User.astro";
+import Section from "../components/Section.astro";
+import TitleSection from "../components/TitleSection.astro";
+---
+
+<Section id="aboutme">
+  <TitleSection>
+    <User class="size-10" />
+    Sobre mí
+  </TitleSection>
+  <article class="flex flex-col-reverse md:flex-row">
+    <div class="grid gap-1 text-pretty">
+      <p>
+        Soy Mauricio Martínez, un <span class="text-yellow-500 font-mono"
+          >desarrollador web autodidacta</span
+        > de El Salvador.
+      </p>
+      <p>
+        Me enfoco en crear <span class="text-yellow-500 font-mono"
+          >experiencias de usuario atractivas y funcionales,</span
+        > y en hacer que las cosas funcionen de la mejor manera posible.
+      </p>
+      <p>
+        Me apasiona la tecnología y la programación, y <span
+          class="text-yellow-500 font-mono">disfruto mucho aprender</span
+        >
+        cosas nuevas y resolver problemas.
+      </p>
+      <p>
+        Actualmente trabajo como desarrollador web principal en <a
+          class="underline"
+          href="https://construfijaciones.com"
+          target="_blank">Construfijaciones</a
+        >, aunque sigo <span class="text-yellow-500 font-mono"
+          >realizando proyectos independientes.</span
+        >
+      </p>
+    </div>
+    <img
+      class="rounded-lg size-48 mx-auto m-4 md:size-64 rotate-3"
+      src="https://media.licdn.com/dms/image/D4E03AQGH-YzONkN4kQ/profile-displayphoto-shrink_800_800/0/1700891947337?e=1726704000&v=beta&t=LL7EdxvPGiPkIP_BUYHcHP0nR6FPpl8WdTIi4xyRbOM"
+      alt="Foto de Mauricio Martínez"
+    />
+  </article>
+</Section>
