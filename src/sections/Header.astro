@@ -1,0 +1,26 @@
+<header class="fixed top-0 left-1/2 -translate-x-1/2 rounded-b-lg z-50">
+  <nav>
+    <ul class="flex gap-6 py-2 px-8 font-mono">
+      <li><a href="#experience">Experiencia</a></li>
+      <li><a href="#projects">Proyectos</a></li>
+      <li><a href="#aboutme">Sobre mí</a></li>
+    </ul>
+  </nav>
+</header>
+
+<style>
+  header {
+    animation: change-color linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 200px;
+    backdrop-filter: blur(10px);
+  }
+  @keyframes change-color {
+    0% {
+      background-color: transparent;
+    }
+    100% {
+      background-color: #fff6;
+    }
+  }
+</style>
