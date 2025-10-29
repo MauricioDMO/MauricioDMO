@@ -6,8 +6,8 @@ import tailwind from "@astrojs/tailwind";
 // https://astro.build/config
 export default defineConfig({
   output: "static",
-  adapter: vercel({
-    webAnalytics: { enabled: true }
-  }),
-  integrations: [tailwind()]
+  integrations: [tailwind()],
+  redirects: {
+    '/parcial': 'https://chatgpt.com/share/69028dfc-c82c-8009-b747-0efdfb33778f'
+  }
 });
