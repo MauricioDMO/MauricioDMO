@@ -8,6 +8,6 @@ export default defineConfig({
   output: "static",
   integrations: [tailwind()],
   redirects: {
-    '/parcial': 'https://chatgpt.com/share/69028dfc-c82c-8009-b747-0efdfb33778f'
+    '/parcial': 'https://chatgpt.com/share/6930c610-7800-8009-84f1-451fafba8187'
   }
 });
