@@ -1,38 +1,50 @@
-<h1 align="left">Hola👋</h1>
+<div align="center">
 
-<p align="left">Mi nombre es Mauricio Martínez y soy un desarrollador front-end</p>
+# Mauricio Martínez
 
-<div align="left" style="display:flex;gap:8px;">
-  <a href="https://www.linkedin.com/in/mauriciodmo/" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin badge" />
+### Software Developer · Desarrollador de software
+
+Building and deploying full-stack applications.
+<br>
+Desarrollo y despliego aplicaciones full stack.
+
+<br>
+
+<a href="https://mauriciodmo.com">
+  <img src="https://img.shields.io/badge/Website-111827?style=for-the-badge&logo=vercel&logoColor=white" alt="Website" />
+</a>
+<a href="https://www.linkedin.com/in/mauriciodmo/">
+  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+</a>
+
+</div>
+
+## Stack
+
+<div align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" height="38" alt="Next.js" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/astro/astro-original.svg" height="38" alt="Astro" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="38" alt="React" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="38" alt="TypeScript" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="38" alt="Node.js" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bun/bun-original.svg" height="38" alt="Bun" />
+</div>
+
+## GitHub
+
+<div align="center">
+  <a href="https://github.com/mauriciodmo">
+    <img height="165" src="https://github-readme-stats-fast.vercel.app/api?username=mauriciodmo&show_icons=true&include_all_commits=true&hide_border=true&theme=transparent" alt="GitHub statistics" />
   </a>
-  <a href="https://mauriciodmo.com" target="_blank">
-    <img src="https://img.shields.io/badge/Website-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="website badge" />
+  <a href="https://github.com/mauriciodmo">
+    <img height="165" src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=mauriciodmo&layout=compact&langs_count=8&hide_border=true&theme=transparent" alt="Most used languages" />
   </a>
 </div>
 
-###
+<div align="center">
 
-<h2 align="left">Sobre mí</h2>
+More about my experience and projects on <a href="https://mauriciodmo.com">mauriciodmo.com</a>.
+<br>
+Más sobre mi experiencia y proyectos en <a href="https://mauriciodmo.com">mauriciodmo.com</a>.
 
-###
-
-<p align="left">✨ Creando bugs desde 2020<br>📚 Actualmente estoy aprendiendo Three.js<br>🎯 Metas: Crear las mejores experiencias de usuario en todos los proyectos que realizo</p>
-
-###
-
-<h2 align="left">Trabajo con:</h2>
-
-###
-
-<div align="left" style="display:flex;gap:8px;">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="html logo"  />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="css logo"  />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo"  />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="40" alt="react logo"  />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/astro/astro-original.svg" height="40" alt="astro logo"  />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" height="40" alt="tailwind logo"  />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg" height="40" alt="vercel logo"  />
 </div>
-
-###
